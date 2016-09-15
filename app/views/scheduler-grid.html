@@ -1,0 +1,27 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>On/Off</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Enabled</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in schedule">
+      <td><input ng-disabled="!item.enabled" type="checkbox" ng-model="item.on"></input></td>
+      <td><input ng-disabled="!item.enabled" class="form-control" type="date" ng-model="item.dateTime"></input></td>
+      <td><input ng-disabled="!item.enabled" class="form-control" type="time" ng-model="item.dateTime"></input></td>
+      <td><input type="checkbox" ng-model="item.enabled"></input></td>
+      <td>
+        <button type="button" class="btn btn-default" ng-click="removeRow($index)">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-default btn-lg" ng-click="addRow()">
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>

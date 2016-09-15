@@ -1,0 +1,9 @@
+{
+  "firebase": "scheduler-poc",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
