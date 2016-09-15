@@ -6,9 +6,9 @@ version 0.15.1.
 ## Getting started
 
 Run these from command line:
-npm install -g grunt-cli bower
-npm install
-bower install
+`npm install -g grunt-cli bower`
+`npm install`
+`bower install`
 
 ## Build & development
 
